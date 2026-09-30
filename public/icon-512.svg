@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#13243a"/>
+    </linearGradient>
+    <linearGradient id="m1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5eead4"/>
+      <stop offset="1" stop-color="#0d9488"/>
+    </linearGradient>
+    <linearGradient id="m2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#94a3b8"/>
+      <stop offset="1" stop-color="#475569"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="108" fill="url(#bg)"/>
+  <circle cx="376" cy="140" r="54" fill="#fbbf24" opacity="0.9"/>
+  <path d="M0 400 L128 256 L214 352 L320 186 L512 374 L512 512 L0 512 Z" fill="url(#m2)"/>
+  <path d="M0 448 L106 320 L192 400 L298 256 L400 368 L512 288 L512 512 L0 512 Z" fill="url(#m1)"/>
+  <path d="M106 320 L138 368 L192 400" fill="none" stroke="#e2e8f0" stroke-width="5" opacity="0.5" stroke-linecap="round"/>
+  <path d="M298 256 L330 314 L400 368" fill="none" stroke="#e2e8f0" stroke-width="5" opacity="0.5" stroke-linecap="round"/>
+</svg>
