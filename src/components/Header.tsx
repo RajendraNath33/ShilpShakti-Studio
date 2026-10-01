@@ -1,4 +1,4 @@
-import { Moon, Sun, Mountain, Menu } from 'lucide-react';
+import { Moon, Sun, Menu } from 'lucide-react';
 import type { Theme } from '@/lib/api';
 
 interface HeaderProps {
@@ -20,9 +20,12 @@ export function Header({ theme, onToggleTheme, onOpenMenu }: HeaderProps) {
             <Menu className="h-5 w-5" />
           </button>
           <div className="flex items-center gap-2.5">
-            <div className="relative flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-summit-400 to-summit-600 shadow-lg shadow-summit-500/20">
-              <Mountain className="h-5 w-5 text-white" strokeWidth={2.5} />
-            </div>
+            {/* Naya High-Tech Logo yahan lagaya gaya hai */}
+            <img
+              src="/logo (2).png"
+              alt="Shilp Shakti Logo"
+              className="h-10 w-10 object-contain drop-shadow-[0_0_10px_rgba(0,210,255,0.5)]"
+            />
             <div className="leading-tight">
               <h1 className="font-display text-base font-bold tracking-tight text-dusk-900 dark:text-white">
                 Devbhumi<span className="text-summit-500"> AI</span>
