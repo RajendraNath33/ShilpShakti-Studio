@@ -28,8 +28,9 @@ import { SettingsView } from '@/components/SettingsView';
 import { MediaConverter } from '@/components/MediaConverter';
 import { TranslatorTool } from '@/components/TranslatorTool';
 import { Toast } from '@/components/Toast';
+import { AuthGate } from '@/components/AuthGate';
 
-function App() {
+function Studio() {
   // Theme
   const [theme, setTheme] = useState<Theme>(() => loadTheme());
   useEffect(() => {
@@ -308,4 +309,10 @@ function App() {
   );
 }
 
-export default App;
+export default function App() {
+  return (
+    <AuthGate>
+      <Studio />
+    </AuthGate>
+  );
+}
